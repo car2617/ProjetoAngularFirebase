@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { DetalhesVeiculoPageRoutingModule } from './detalhes-veiculo-routing.module';
 
 import { DetalhesVeiculoPage } from './detalhes-veiculo.page';
+import { RouterLink } from '@angular/router';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DetalhesVeiculoPageRoutingModule
+    DetalhesVeiculoPageRoutingModule,
+    RouterLink
   ],
   declarations: [DetalhesVeiculoPage]
 })

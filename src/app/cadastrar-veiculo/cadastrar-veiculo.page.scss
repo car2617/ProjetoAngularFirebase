@@ -1,0 +1,60 @@
+// Estilo para o cabeçalho
+ion-header {
+    [translucent="true"] {
+      ion-toolbar {
+        background-color: #007bff; // Cor de fundo do cabeçalho
+        color: white; // Cor do texto do cabeçalho
+  
+        ion-title {
+          font-size: 1.5rem; // Tamanho da fonte do título
+        }
+      }
+    }
+  }
+  
+  // Estilo para o conteúdo
+  ion-content {
+    [fullscreen="true"] {
+      background-color: #f7f7f7; // Cor de fundo do conteúdo
+      padding: 20px; // Espaçamento interno
+  
+      ion-row {
+        ion-col {
+          &.ion-text-center {
+            text-align: center; // Alinhar o conteúdo no centro
+  
+            form {
+              ion-item {
+                margin-bottom: 15px; // Espaçamento inferior entre itens
+  
+                ion-label {
+                  font-weight: bold; // Texto em negrito
+                }
+  
+                ion-input {
+                  border: 1px solid #ccc; // Borda dos campos de entrada
+                  border-radius: 5px; // Cantos arredondados
+                  padding: 10px; // Espaçamento interno
+                }
+              }
+  
+              ion-button[type="submit"] {
+                width: 100%; // Largura total do botão
+                background-color: #007bff; // Cor de fundo do botão
+                color: white; // Cor do texto do botão
+                margin-top: 20px; // Espaçamento superior do botão
+                border-radius: 5px; // Cantos arredondados do botão
+              }
+  
+              img {
+                max-width: 100%; // Garante que as imagens não ultrapassem a largura do contêiner
+                display: block; // Remove margens indesejadas abaixo das imagens
+                margin-top: 10px; // Espaçamento superior das imagens
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
