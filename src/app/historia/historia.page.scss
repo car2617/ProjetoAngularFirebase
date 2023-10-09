@@ -63,7 +63,6 @@ ion-toolbar {
     font-weight: bold;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-transform: uppercase;
     letter-spacing: 1px;
   }
   
@@ -86,6 +85,7 @@ ion-toolbar {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+    background-image: none;
   }
 
   ion-card {
