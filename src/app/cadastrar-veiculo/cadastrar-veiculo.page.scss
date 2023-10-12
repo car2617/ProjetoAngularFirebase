@@ -1,60 +1,42 @@
-// Estilo para o cabeçalho
-ion-header {
-    [translucent="true"] {
-      ion-toolbar {
-        background-color: #007bff; // Cor de fundo do cabeçalho
-        color: white; // Cor do texto do cabeçalho
-  
-        ion-title {
-          font-size: 1.5rem; // Tamanho da fonte do título
-        }
+// Estilize o formulário de cadastro
+ion-content {
+  --background: #f0f0f0; // Define a cor de fundo do formulário
+
+  .registration-form {
+    background-color: var(--background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    ion-input {
+      margin-bottom: 15px;
+
+      // Personalize a aparência das entradas de texto
+      --border-color: #007bff;
+      --placeholder-color: #333;
+      --highlight-color-focused: #007bff;
+    }
+
+    ion-button {
+      --background: #007bff;
+      --color: #fff;
+      border-radius: 5px;
+      margin-top: 15px;
+
+      &.ion-focus {
+        --background: darken(#007bff, 10%);
+      }
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
-  
-  // Estilo para o conteúdo
-  ion-content {
-    [fullscreen="true"] {
-      background-color: #f7f7f7; // Cor de fundo do conteúdo
-      padding: 20px; // Espaçamento interno
-  
-      ion-row {
-        ion-col {
-          &.ion-text-center {
-            text-align: center; // Alinhar o conteúdo no centro
-  
-            form {
-              ion-item {
-                margin-bottom: 15px; // Espaçamento inferior entre itens
-  
-                ion-label {
-                  font-weight: bold; // Texto em negrito
-                }
-  
-                ion-input {
-                  border: 1px solid #ccc; // Borda dos campos de entrada
-                  border-radius: 5px; // Cantos arredondados
-                  padding: 10px; // Espaçamento interno
-                }
-              }
-  
-              ion-button[type="submit"] {
-                width: 100%; // Largura total do botão
-                background-color: #007bff; // Cor de fundo do botão
-                color: white; // Cor do texto do botão
-                margin-top: 20px; // Espaçamento superior do botão
-                border-radius: 5px; // Cantos arredondados do botão
-              }
-  
-              img {
-                max-width: 100%; // Garante que as imagens não ultrapassem a largura do contêiner
-                display: block; // Remove margens indesejadas abaixo das imagens
-                margin-top: 10px; // Espaçamento superior das imagens
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+}
+
   
